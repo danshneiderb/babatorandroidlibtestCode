@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//group='com.github.danshneiderb'
+apply plugin: 'com.jfrog.bintray'
+
 Properties properties = new Properties()
 properties.load(project.rootProject.file('local.properties').newDataInputStream())
 
@@ -65,6 +65,5 @@ buildscript {
     }
 }
 
-//apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/babatorandroidlibtest.gradle'
-//apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/installv.gradle'
-//apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/bintrayv.gradle'
+apply from: 'https://raw.githubusercontent.com/danshneider/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/danshneider/JCenter/master/bintrayv1.gradle'
