@@ -1,12 +1,15 @@
 apply plugin: 'com.android.library'
 //apply plugin: 'com.github.dcendents.android-maven'
 //group='com.github.danshneiderb'
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'babator-android-lib-test'
 
     publishedGroupId = 'babator.com.babatorandroidlibtest'
-    libraryName = 'babatorandroidlibtest'
+    libraryName = 'babatorandroidlibtest-release'
     artifact = 'babator-android-lib-test'
 
     libraryDescription = 'A test for Babator android lib'
@@ -61,6 +64,6 @@ buildscript {
     }
 }
 
-// Place it at the end of the file
-apply from: 'https://raw.githubusercontent.com/danshneider/babatorandroidlibtestCode/master/babatorandroidlibtest.gradle'
-//apply from: 'https://raw.githubusercontent.com/danshneider/JCenter/master/bintrayv1.gradle'
+//apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/babatorandroidlibtest.gradle'
+apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/installv.gradle'
+apply from: 'https://raw.githubusercontent.com/danshneider/jcenter/master/bintrayv.gradle'
