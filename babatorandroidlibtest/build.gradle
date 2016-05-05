@@ -19,7 +19,7 @@ ext {
     artifact = 'babatorandroidlibtest'
 
     libraryDescription = 'A test for Babator android lib'
-    libraryVersion = '1.0.2'
+    libraryVersion = '1.0.4'
 
     developerId = 'danshneider'
     developerName = 'Dan Shneider'
