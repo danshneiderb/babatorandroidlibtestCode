@@ -56,7 +56,7 @@ public class DoCalc {
      * @return
      */
     public static int Power2(int x){
-        return x^2;
+        return (int)Math.pow(x, 2);
 
     }
 }
