@@ -49,4 +49,14 @@ public class Calc {
         }
 
     }
+
+    /**
+     * X power 2
+     * @param x
+     * @return
+     */
+    public static int Power2(int x){
+        return x^2;
+
+    }
 }
